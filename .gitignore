@@ -1,0 +1,33 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Downloaded datasets and training logs
+data/
+output/logs/
+
+# Generated prediction scratch file
+output/temp_pred.jpg
+
+# Keep only the deployable checkpoint in Git
+output/models/*
+!output/models/best_model.pth
